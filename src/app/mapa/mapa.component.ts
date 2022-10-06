@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit,Output } from '@angular/core';
 
 @Component({
   selector: 'app-mapa',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapaComponent implements OnInit {
 
+  @Output() newItemEvent = new EventEmitter<any>();
   constructor() { }
 
   ngOnInit(): void {
@@ -17,16 +18,8 @@ export class MapaComponent implements OnInit {
     let name = item.getAttribute('name')
     let id = item.getAttribute('id')    
     console.log(id, name)
-
-
-  })
-
-  removesize = addEventListener('mouseleave',(e)=>{
-    let item = e.target as Element
-    let name = item.getAttribute('name')
-    let id = item.getAttribute('id')    
-    console.log(id, name)
-    item.classList.remove('size')
+    this.newItemEvent.emit(name)
 
   })
+
 }
