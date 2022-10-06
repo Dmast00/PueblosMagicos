@@ -1,0 +1,9 @@
+.estado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 10vh;
+}
+.estado>h2 {
+    font-size: 50px;
+}
