@@ -13,11 +13,11 @@ export class MapaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  PathId = addEventListener('mouseover',(e)=>{
+  PathId = addEventListener('click',(e)=>{
     let item = e.target as Element
     let name = item.getAttribute('name')
-    let id = item.getAttribute('id')    
-    console.log(id, name)
+    let id = item.getAttribute('id')
+    window.scrollTo(0,document.body.scrollHeight);    
     this.newItemEvent.emit(name)
 
   })

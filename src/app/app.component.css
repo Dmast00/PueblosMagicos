@@ -1,3 +1,7 @@
+.container{
+    height: 100vh;
+    width: 100%;
+}
 .estado{
     display: flex;
     flex-direction: row;
@@ -6,4 +10,8 @@
 }
 .estado>h2 {
     font-size: 50px;
+}
+.info__estado{
+    width: 100%;
+    height: 100vh;
 }
