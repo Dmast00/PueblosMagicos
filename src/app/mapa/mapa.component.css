@@ -5,9 +5,9 @@
     align-items: center;
 }
 svg{
-    fill: #79B791;
+    fill: #575596;
     stroke: black;
-    stroke-width: 1.2px;
+    stroke-width: 1.3px;
     
 }
 path{
@@ -16,7 +16,7 @@ path{
     z-index: 100;
 }
 path:hover{
-    fill: #51291E;
+    fill: #29a584;
     cursor: pointer;
     padding: 0px;
 }
