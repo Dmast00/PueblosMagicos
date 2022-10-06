@@ -1,10 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 svg{
     fill: #A5E6BA;
     stroke: black;
     stroke-width: 1.2px;
+    
 }
+path{
 
+
+    z-index: 100;
+}
 path:hover{
     fill: #9AC6C5;
     cursor: pointer;
+    padding: 0px;
+}
+
+.size{
+    transform: scale(1.1);
 }
