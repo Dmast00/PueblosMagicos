@@ -8,12 +8,13 @@ import { Component, EventEmitter, OnInit,Output } from '@angular/core';
 export class MapaComponent implements OnInit {
 
   @Output() newItemEvent = new EventEmitter<any>();
-  constructor() { }
-
+  constructor() {
+  }
+  
   ngOnInit(): void {
   }
-
-  PathId = addEventListener('click',(e)=>{
+  
+  path = addEventListener('click',(e)=>{
     e.preventDefault();
     let item = e.target as Element
     let name = item.getAttribute('name')
