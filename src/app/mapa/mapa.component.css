@@ -1,0 +1,10 @@
+svg{
+    fill: #A5E6BA;
+    stroke: black;
+    stroke-width: 1.2px;
+}
+
+path:hover{
+    fill: #9AC6C5;
+    cursor: pointer;
+}
